@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box1{
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(239, 180, 79);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            animation-name: box1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+        }
+        .box2{
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(91, 142, 237);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            animation-name: box2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+           
+        }
+       
+        @keyframes box {
+            from{
+               transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes box1 {
+            from{
+               transform: rotatex(0);
+            }
+            to{
+                transform: rotatex(360deg);
+            }
+        }
+        @keyframes box2 {
+            from{
+               transform: rotatey(0);
+            }
+            to{
+                transform: rotatey(360deg);
+            }
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1"> hello</div>
+    <div class="box2">text</div>
+   
+</body>
+</html>
